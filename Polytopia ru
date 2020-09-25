@@ -1,4 +1,5 @@
 {
+  setlocale(LC_ALL, "Russian");
   "language": "Russian",
   "startmenu.new_game": "НОВАЯ ИГРА",
   "startmenu.multiplayer": "МУЛЬТИПЛЕЕР",
