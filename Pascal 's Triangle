@@ -1,0 +1,13 @@
+def pascal(n):
+    for i in range(n+1):
+        if i == 0:
+            l = [1]
+        elif i == 1:
+            l = [1, 1]
+        elif i > 1 and l[1] != n:
+            l_temp = [1]
+            [l_temp.append(l[j]+l[j+1]) for j in range(len(l) - 1)]
+            l = l_temp
+            l.append(1)
+        print(f'{i}:', ' '*(n-len(l)), *l)
+print(pascal(int(input())))
